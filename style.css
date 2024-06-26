@@ -1,83 +1,65 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: #fff;
+    background: linear-gradient(to bottom, #b3e5fc, #e1f5fe);
+    color: #333;
 }
 
 header {
     text-align: center;
-    padding: 50px 0;
+    padding: 2em 0;
+    background: linear-gradient(to right, #00bcd4, #03a9f4);
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    margin: 0.5em 0;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
+    margin: 0 1em;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
 section {
-    padding: 50px;
+    padding: 2em;
     text-align: center;
 }
 
-.skills-container, .projects-container {
+.skills, .projects, .timeline {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.skill, .project {
-    margin: 20px;
+.skill, .project, .timeline-item {
+    margin: 1em;
     text-align: center;
 }
 
 .skill img, .project img {
     width: 100px;
     height: 100px;
-    object-fit: contain;
 }
 
-.timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.timeline-event {
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-    nav ul li {
-        margin: 10px 0;
-    }
-    .skills-container, .projects-container {
-        flex-direction: column;
-        align-items: center;
-    }
+.timeline-item p {
+    margin: 0.5em 0;
 }
